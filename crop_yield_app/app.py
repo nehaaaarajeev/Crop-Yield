@@ -91,12 +91,12 @@ def preprocess_and_train(df_raw):
     # --- Null handling ---
     for col in df.select_dtypes(include=[np.number]).columns:
         df[col].fillna(df[col].mean(), inplace=True)
-    for col in df.select_dtypes(include=["object", "str"]).columns:
+    for col in df.select_dtypes(include=["object"]).columns:
         df[col].fillna(df[col].mode()[0], inplace=True)
 
     # --- Encode ---
     df_enc = df.copy()
-    cat_cols = df.select_dtypes(include=["object", "str"]).columns.tolist()
+    cat_cols = df.select_dtypes(include=["object"]).columns.tolist()
     le = LabelEncoder()
     for col in cat_cols:
         df_enc[col] = le.fit_transform(df_enc[col])
