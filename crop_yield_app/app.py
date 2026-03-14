@@ -7,6 +7,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import os
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
@@ -80,7 +81,7 @@ PLOTLY_TEMPLATE = "plotly_white"
 # ─────────────────────────────────────────────────
 @st.cache_data
 def load_data():
-    df = pd.read_csv("Crop_Yield.csv", encoding="latin1")
+    df = pd.read_csv(os.path.join(os.path.dirname(__file__), "Crop_Yield.csv"), encoding="latin1")
     return df
 
 @st.cache_data
