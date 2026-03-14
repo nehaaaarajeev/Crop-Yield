@@ -1,0 +1,24 @@
+Column,Original Value,Encoded Value
+Crop Type,Cotton,0
+Crop Type,Maize,1
+Crop Type,Rice,2
+Crop Type,Sugarcane,3
+Crop Type,Wheat,4
+Season,Kharif,0
+Season,Rabi,1
+Season,Zaid,2
+Soil Type,Black,0
+Soil Type,Clay,1
+Soil Type,Loamy,2
+Soil Type,Sandy,3
+Soil Type,Silty,4
+Irrigation Type,Drip,0
+Irrigation Type,Flood,1
+Irrigation Type,Rainfed,2
+Irrigation Type,Sprinkler,3
+Seed Quality,Certified,0
+Seed Quality,Hybrid,1
+Seed Quality,Local,2
+Farming Practice,Conventional,0
+Farming Practice,Mixed,1
+Farming Practice,Organic,2
